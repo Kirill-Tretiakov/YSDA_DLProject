@@ -17,7 +17,7 @@ Telegram-бот, основанный на модифицированной мо
 
 Техническая реализация
 
-Базовая модель: blanchefort/rubert-base-cased-sentiment (предобученный RuBERT для анализа тональности).
+Базовая модель: [blanchefort/rubert-base-cased-sentiment](https://huggingface.co/blanchefort/rubert-base-cased-sentiment) (предобученный RuBERT для анализа тональности).
 Дообучение: Замена последнего слоя на кастомную трехслойную нейросеть (CustomModel) и fine-tuning под задачу классификации чат-сообщений.
 Датасет: Собранные вручную примеры сообщений
 
