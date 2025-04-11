@@ -1,5 +1,5 @@
 import telebot
-from config import BOT_TOKEN
+from config import bot_token, model_path, silent_mode
 
 import torch
 from safetensors.torch import load_file
@@ -128,5 +128,5 @@ class ChatAdministratorBot:
 if __name__ == "__main__":
     model_path = "./model"
 
-    bot = ChatAdministratorBot(BOT_TOKEN, model_path)
+    bot = ChatAdministratorBot(BOT_TOKEN, model_path, silent_mode)
     bot.run()
